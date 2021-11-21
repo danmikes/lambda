@@ -1,24 +1,24 @@
 public class Two {
 
-    public static void main(String[] args) {
-        // method
-        HelloLong showLong = new HelloLong();
-        showLong.hello();
+  public static void main(String[] args) {
+    // method
+    HelloLong showLong = new HelloLong();
+    showLong.hello();
 
-        // function
-        Hello show = () -> System.out.println("Hello");
-        show.hello();
-    }
+    // function
+    Hello show = () -> System.out.println("Hello");
+    show.hello();
+  }
 }
 
 @FunctionalInterface
 interface Hello {
-    void hello();
+  void hello();
 }
 
 class HelloLong implements Hello {
-    @Override
-    public void hello() {
-        System.out.println("Hello");
-    }
+  @Override
+  public void hello() {
+    System.out.println("Hello");
+  }
 }
